@@ -1,8 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <h1>
     Welcome to {{ title }}!
-</h1>
-
-<h2>Here is our Books Component:</h2>
-
-<app-books></app-books>
+  </h1>
+  
+  <nav>
+    <a routerLink="/">Home</a>
+    <a routerLink="/books">Books</a>
+    <a routerLink="/orders">Orders</a>
+  </nav>
+  
+  <app-nav-bar></app-nav-bar>
+  
+  <router-outlet></router-outlet>
+  
+  <app-footer></app-footer>
